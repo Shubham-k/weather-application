@@ -25,21 +25,24 @@ app.get("", (req, res) => {
   res.render("index", {
     title: "HOME PAGE",
     age: 19,
-    name: "Shubham Kumar",
+    person1: "Shubham Kumar",
+    person2: "Hemang Mehta",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "ABOUT PAGE",
-    name: "Shubham Kumar",
+    person1: "Shubham Kumar",
+    person2: "Hemang Mehta",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "HELP PAGE",
-    name: "Shubham Kumar",
+    person1: "Shubham Kumar",
+    person2: "Hemang Mehta",
   });
 });
 
@@ -76,7 +79,8 @@ app.get("*", (req, res) => {
   res.render("404", {
     title: "404 ERROR!",
     error: "page not found!",
-    name: "Shubham Kumar",
+    person1: "Shubham Kumar",
+    person2: "Hemang Mehta",
   });
 });
 
